@@ -30,8 +30,8 @@ class PemasukanController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'deskripsi' => 'required|string|max:255',
-            'jumlah' => 'required|numeric|min:0',
+            'description' => 'required|string|max:255',
+            'amount' => 'required|numeric|min:1',
         ]);
 
         Pemasukan::create($request->all());

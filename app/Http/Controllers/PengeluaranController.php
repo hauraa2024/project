@@ -11,10 +11,11 @@ class PengeluaranController extends Controller
      * Display a listing of the resource.
      */
     public function index()
-    {
-        $pengeluarans = Pengeluaran::all();
-        return view('Pengeluaran.index', compact('pengeluarans'));
-    }
+{
+    $pengeluaran = Pengeluaran::all(); // atau paginate()
+    return view('pengeluaran.index', compact('pengeluaran'));
+}
+
 
     /**
      * Show the form for creating a new resource.

@@ -80,6 +80,10 @@
                         <a class="nav-link" href="{{ route('pemasukan.index') }}">
                             <i class="fa-solid fa-users"></i> pemasukan
                         </a>
+                        <li class="nav-item">
+                        <a class="nav-link" href="{{ route('pengeluaran.index') }}">
+                            <i class="fa-solid fa-users"></i> pengeluaran
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -91,6 +95,7 @@
         </main>
     </div>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </body>
 </html>

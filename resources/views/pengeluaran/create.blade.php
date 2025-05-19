@@ -1,11 +1,8 @@
 @extends('products.layout')
 
-
 @section('content')
-
 <div class="container">
-
-    <h1>Tambah Pemasukan</h1>
+    <h1>Tambah Pengeluaran</h1>
 
     @if ($errors->any())
         <div class="alert alert-danger">
@@ -17,7 +14,7 @@
         </div>
     @endif
 
-    <form action="{{ route('pemasukan.store') }}" method="POST">
+    <form action="{{ route('pengeluaran.store') }}" method="POST">
         @csrf
 
         <div class="form-group">
@@ -31,9 +28,7 @@
         </div>
 
         <button type="submit" class="btn btn-primary">Simpan</button>
-        <a href="{{ route('pemasukan.index') }}" class="btn btn-secondary">Kembali</a>
+        <a href="{{ route('pengeluaran.index') }}" class="btn btn-secondary">Kembali</a>
     </form>
-
 </div>
-
 @endsection
