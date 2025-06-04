@@ -18,13 +18,13 @@
         @csrf
 
         <div class="form-group">
-            <label for="description">Deskripsi</label>
-            <input type="text" class="form-control" id="description" name="description" required>
+            <label for="deskripsi">Deskripsi</label>
+           <input type="text" name="deskripsi" value="{{ old('deskripsi') }}">
         </div>
 
         <div class="form-group">
-            <label for="amount">Jumlah</label>
-            <input type="number" class="form-control" id="amount" name="amount" required>
+            <label for="jumlah">Jumlah</label>
+            <input type="number" name="jumlah" value="{{ old('jumlah') }}">
         </div>
 
         <button type="submit" class="btn btn-primary">Simpan</button>
